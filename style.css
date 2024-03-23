@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(103, 214, 181);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px; /* add*/
+}
+
+.fram{
+    border: 5px solid black;
+    height: auto;
+    width: 1000px;
+    display: flex;
+    border-radius: 10%;
+}
+
+.kotakkotak{
+    padding: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    
+}
+
+.cell {
+    border: 2px solid rgba(0, 0, 0, 0.525);
+}
+
+input[type="range"] {
+    width: 800px;
+    height:100px;
+}
+
+.buttonContaine{
+    margin: 40px;
+}
+
+button{
+    width: 100px;
+    display: block;
+    margin-bottom: 20px;
+    font-size: large;
+    border-radius: 25%;
+    height: 100px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+input[type='color']:hover{
+    transform: scale(1.1);
+}
+input[type='color']:active{
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1);
+}
+
+input[type='color']{
+    -webkit-appearance: none;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper{
+    padding:0;
+    
+}
+
+input[type='color']::-webkit-color-swatch{
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+}
